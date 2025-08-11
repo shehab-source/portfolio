@@ -9,6 +9,7 @@
   position: sticky;
   top: 0;
   z-index: 9999;
+  cursor: none;
 }
 a {
   cursor: none; /* Changes the cursor to the standard arrow pointer */
@@ -49,6 +50,7 @@ section {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
+  cursor: none;
 }
 
 

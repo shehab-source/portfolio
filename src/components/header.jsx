@@ -55,7 +55,7 @@ function Header() {
               enableOnHover={true}
               className='custom-class'
             >
-              Shihab Ahmed
+              Shihabeldin Ahmed
             </GlitchText>
           </motion.div>
           {/* Navigation bar */}
@@ -117,7 +117,7 @@ function Header() {
           </div>
           
           {/* Mobile Menu */}
-          <div className="lg:hidden overflow-hidden bg-white dark:bg-gray-900 px-20 py-5">
+          <div className="lg:hidden flex bg-white dark:bg-gray-900  w-full">
             <nav className={`flex flex-col space-y-4 ${isOpen ? "block" : "hidden"} py-4`}>
               {["Home", "About", "Experience", "Projects", "Contact"].map((item) => (
                 <a
