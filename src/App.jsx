@@ -3,6 +3,7 @@ import HeroSection from "./components/HeroSection";
 import Cursor from "./components/Cursor";
 import Scroller from "./components/Scroller";
 import AboutSection from "./components/AboutSection";
+import Contact from "./components/Contact";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <Cursor />
       <AboutSection />
       <Scroller />
+      <Contact />
     </div>
   )
 }
