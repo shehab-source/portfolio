@@ -19,6 +19,10 @@ a {
 html {
   scroll-behavior: smooth;
   cursor: none; /* Hide default cursor */
+   user-select: none;
+  -webkit-user-select: none; /* For Chrome, Safari, Opera */
+  -moz-user-select: none;    /* For Firefox */
+  -ms-user-select: none;     /* For Internet Explorer/Edge */
   
 }
 
@@ -50,6 +54,10 @@ section {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
+  cursor: none;
+}
+
+.header{
   cursor: none;
 }
 

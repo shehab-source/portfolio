@@ -27,7 +27,7 @@ function Header() {
   };
 
   return (
-    <header className="relative w-full z-50 transition-all duration-300  top-0 sticky z-[999]">
+    <header className="relative w-full z-50 transition-all duration-300  top-0 sticky z-[999] header">
     
       <div className=" bg-white dark:bg-gray-900 shadow-md dark:shadow-gray-800 backdrop-blur bg-opacity-10 dark:bg-opacity-10 ">
         <div className="container mx-auto px-4  sm:px-6 lg:px-8 flex items-center h-16 md:h-20">
@@ -45,10 +45,7 @@ function Header() {
             }}
             className="flex items-center"
           >
-            <div className="h-10 w-10 rounded-xl bg-gradient-to-r from-gray-500 to-gray-100 flex items-center justify-center text-purple-600 font-bold text-xl mr-3 ">
-              P
-            </div>
-
+            
             <GlitchText
               speed={1}
               enableShadows={true}
@@ -87,6 +84,7 @@ function Header() {
             ))}
             <div className="flex space-x-4 ml-4 my-auto">
               <motion.a
+              href="https://github.com/shehab-source"
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: [1, 1.2, 1] }}
                 transition={{ delay: 1.5, duration: 2 }}
