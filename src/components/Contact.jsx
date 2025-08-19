@@ -31,7 +31,7 @@ const Contact = () => {
             scrollTrigger: {
                 trigger: sectionRef.current,
                 start: "top top",
-                end: "+=200%",
+                end: "+=100%",
                 pin: true,
                 scrup: 0.5,
                 anticipatePin: 1,
@@ -141,16 +141,11 @@ const Contact = () => {
                         />
                     </h1>
 
-                    <p className="text-black lg:w-[40rem] w-[20rem] absolute sm:mt-3 mt-1 md:scale-[0.1] scale-[0.068]">
+                 
 
-
-                        
-
-                    </p>
-
-                    <button className="px-10 py-2 rounded-full bg-black hover:bg-purple hover:text-black transition-all duration-500 scale-[0.1] absolute sm:mt-9 mt-7 text-nowrap">
+                    <a href="#contactform" className="px-10 py-2 rounded-full bg-black hover:bg-purple hover:text-black transition-all duration-500 scale-[0.1] absolute sm:mt-9 mt-7 text-nowrap">
                         <ShinyText text="Contact me" disabled={false} speed={3} className='custom-class' />
-                    </button>
+                    </a>
 
 
                 </div>

@@ -6,6 +6,7 @@ import AboutSection from "./components/AboutSection";
 import Contact from "./components/Contact";
 import Footer from "./components/footer";
 import Progressbar from "./components/progressbar";
+import Contactform from "./components/contactform";
 
 export default function App() {
   return (
@@ -17,8 +18,11 @@ export default function App() {
       <AboutSection />
       <Scroller />
       <Contact />
+      <Contactform />
       <Footer />
       <Progressbar />
+      
+      
 
     </div>
   )
