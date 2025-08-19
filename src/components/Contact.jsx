@@ -72,7 +72,7 @@ const Contact = () => {
             circleRef.current,
             {
                 scale: 17,
-                background: "#E9D5FF",
+                background: "#cea6f8ff",
                 boxShadow: "0 0 50px 20px rgba(233, 213, 255, 0.3)",
                 ease: "power2.inOut",
                 duration: 0.5,

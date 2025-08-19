@@ -52,7 +52,7 @@ const progressbar = () => {
     })
 
   return (
-    <div ref={progressbarRef} className="fixed top-0 left-0 w-full h-[5px] bg-gray-800 z-999">
+    <div ref={progressbarRef} className="top-20 left-0 fixed w-full h-[5px] bg-gray-800 z-999 footer">
         <div
         ref={progressfillRef}
         className='h-full w-0 bg-[#A1045a] transition-colors duration-300 ' style={{width: "0%"}}

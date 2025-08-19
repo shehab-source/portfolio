@@ -48,6 +48,11 @@ select {
   cursor: none;
 }
 
+.footer{
+  cursor: none;
+
+}
+
 /* Section styling */
 section {
   position: relative;
