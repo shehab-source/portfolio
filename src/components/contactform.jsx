@@ -3,6 +3,9 @@ import AnimatedContent from './Custom/ReactBits/animatedcontent'
 import React from 'react'
 
 const contactform = () => {
+
+    
+
     const [result, setResult] = React.useState("Send Message")
     const onSubmit = async (event) => {
         event.preventDefault();
@@ -27,7 +30,7 @@ const contactform = () => {
         }
     };
     return (
-        <section className="bg-gradient-to-t from-black to-[#9a74cf50]">
+        <section className="bg-gradient-to-b from-black to-[#9a74cf50] mt-50">
             <AnimatedContent
 
                 distance={200}
@@ -51,14 +54,14 @@ const contactform = () => {
                 delay={0.5}
 
             >
-                <div className='flex items-center justify-center h-screen mt-10' id="contactform">
+                <div className='flex items-center justify-center h-screen mt-10' >
                     <div className="w-1/2 backdrop-blur-md rounded-2xl shadow-lg">
                         <h2 className=" felx justify-center itmes-centertext-3xl font-bold text-white mb-6">leave a message</h2>
 
                         <form className="space-y-4" onSubmit={onSubmit}>
                             <div>
                                 <label className="block text-sm text-gray-200 mb-1">Name</label>
-                                <input
+                                <input 
                                     name='name'
                                     type="text"
                                     placeholder="Your name"
@@ -67,7 +70,7 @@ const contactform = () => {
                                 />
                             </div>
 
-                            <div>
+                            <div id="contact" >
                                 <label className="block text-sm text-gray-200 mb-1">Email</label>
                                 <input
                                     name='email'

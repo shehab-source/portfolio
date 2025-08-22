@@ -28,7 +28,7 @@ function Header() {
 
   return (
     <header className="relative w-full z-50 transition-all duration-300  top-0 sticky z-[999] header">
-    
+
       <div className=" bg-white dark:bg-gray-900 shadow-md dark:shadow-gray-800 backdrop-blur bg-opacity-10 dark:bg-opacity-10 ">
         <div className="container mx-auto px-4  sm:px-6 lg:px-8 flex items-center h-16 md:h-20">
           {/* Logo or Title can be added here */}
@@ -45,7 +45,7 @@ function Header() {
             }}
             className="flex items-center"
           >
-            
+
             <GlitchText
               speed={1}
               enableShadows={true}
@@ -58,7 +58,7 @@ function Header() {
           {/* Navigation bar */}
 
           <div className="lg:flex hidden space-x-10 items-left ml-auto text-xl">
-            
+
 
             {["Home", "About", "Experience", "Projects", "Contact"].map((item, index) => (
               <motion.a
@@ -72,7 +72,7 @@ function Header() {
                   duration: 1.2,
                 }}
                 key={item}
-                onClick={(e) =>  {
+                onClick={(e) => {
                   e.preventDefault();
                   scrollToSection(item.toLowerCase())
                 }}
@@ -84,20 +84,21 @@ function Header() {
             ))}
             <div className="flex space-x-4 ml-4 my-auto">
               <motion.a
-              href="https://github.com/shehab-source"
+                href="https://github.com/shehab-source"
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: [1, 1.2, 1] }}
                 transition={{ delay: 1.5, duration: 2 }}
                 className="text-gray-800 dark:text-gray-200 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-300"
-                >
+              >
                 <FiGithub className="w-5 h-5 " />
               </motion.a>
               <motion.a
+              href="https://www.linkedin.com/in/shihabeldin-ahmed-218950218/"
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: [1, 1.2, 1] }}
                 transition={{ delay: 1.5, duration: 2 }}
                 className="text-gray-800 dark:text-gray-200 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-300"
-                >
+              >
                 <FiLinkedin className="w-5 h-5 " />
               </motion.a>
             </div>
@@ -113,7 +114,7 @@ function Header() {
               {isOpen ? <FiX className="w-6 h-6 text-gray-800 dark:text-gray-200" /> : <FiMenu className="w-8 h-8 text-gray-800 dark:text-gray-200" onClick={toggleMenu} />}
             </motion.button>
           </div>
-          
+
           {/* Mobile Menu */}
           <div className="lg:hidden flex bg-white dark:bg-gray-900  w-full">
             <nav className={`flex flex-col space-y-4 ${isOpen ? "block" : "hidden"} py-4`}>

@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/footer";
 import Progressbar from "./components/progressbar";
 import Contactform from "./components/contactform";
+import Experience from "./components/experience";
 
 export default function App() {
   return (
@@ -16,8 +17,9 @@ export default function App() {
       <HeroSection />
       <Cursor />
       <AboutSection />
+      <Experience />
       <Scroller />
-      <Contact />
+      
       <Contactform />
       <Footer />
       <Progressbar />

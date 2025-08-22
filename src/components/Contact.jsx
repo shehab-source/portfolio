@@ -3,11 +3,30 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ShinyText from "./Custom/ReactBits/shiny";
 import DecryptedText from './Custom/ReactBits/decodetext';
+import { animate } from "framer-motion";
 const Contact = () => {
     const circleRef = useRef(null)
     const sectionRef = useRef(null)
     const intialtextRef = useRef(null)
     const finaltextRef = useRef(null)
+
+    const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      const yOffset = -210; // offset for sticky header
+      const targetY = section.getBoundingClientRect().top + window.scrollY + yOffset;
+
+      // Animate window.scrollY using Framer Motion
+      animate(window.scrollY, targetY, {
+        duration: 0.8,
+        ease: "easeInOut",
+        onUpdate: (latest) => {
+          window.scrollTo(0, latest);
+        },
+      });
+    }
+  };
+
 
 
     useEffect(() => {
@@ -143,7 +162,7 @@ const Contact = () => {
 
                  
 
-                    <a href="#contactform" className="px-10 py-2 rounded-full bg-black hover:bg-purple hover:text-black transition-all duration-500 scale-[0.1] absolute sm:mt-9 mt-7 text-nowrap">
+                    <a onClick={scrollToSection("contactform")}  className="px-10 py-2 rounded-full bg-black hover:bg-purple hover:text-black transition-all duration-500 scale-[0.1] absolute sm:mt-9 mt-7 text-nowrap">
                         <ShinyText text="Contact me" disabled={false} speed={3} className='custom-class' />
                     </a>
 
