@@ -4,30 +4,8 @@ import ScrollReveal from "./Custom/ReactBits/scrollreveal";
 import AnimatedContent from './Custom/ReactBits/animatedcontent'
 const experience = () => {
     return (
-        <section className="bg-gradient-to-t from-black to-[#9a74cf50] bg-gradient-to-b from-black to-[#9a74cf50] ">
-<AnimatedContent
+        <section className="bg-gradient-to-t from-black to-[#9a74cf50] bg-gradient-to-b from-black to-[#9a74cf50] mb-40">
 
-                distance={300}
-
-                direction="vertical"
-
-                reverse={false}
-
-                duration={2}
-
-                ease="power3.out"
-
-                initialOpacity={0.1}
-
-                animateOpacity
-
-                scale={1.1}
-
-                threshold={0.2}
-
-                delay={0}
-
-            >
 
             {/*particles backgorund*/}
             <div id="experience" style={{ width: '100%', height: '100%', position: 'absolute', zIndex: -1 }}>
@@ -43,8 +21,31 @@ const experience = () => {
                 />
             </div>
 
-            
-                <div className="z-999">
+
+            <div className="z-999">
+                <AnimatedContent
+
+                    distance={300}
+
+                    direction="vertical"
+
+                    reverse={false}
+
+                    duration={2}
+
+                    ease="power3.out"
+
+                    initialOpacity={0}
+
+                    animateOpacity
+
+                    scale={1.1}
+
+                    threshold={0.2}
+
+                    delay={0}
+
+                >
                     {/*title*/}
                     <div className="mt-40" >
                         <p className="text-5xl text-center">
@@ -86,9 +87,10 @@ const experience = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </AnimatedContent>
+            </div>
 
-            </AnimatedContent>
+
 
         </section>
     )

@@ -8,7 +8,7 @@ import Footer from "./components/footer";
 import Progressbar from "./components/progressbar";
 import Contactform from "./components/contactform";
 import Experience from "./components/experience";
-
+import Projects from "./components/projects";
 export default function App() {
   return (
     <div className="font-cairo">
@@ -18,8 +18,8 @@ export default function App() {
       <Cursor />
       <AboutSection />
       <Experience />
+      <Projects />
       <Scroller />
-      
       <Contactform />
       <Footer />
       <Progressbar />
