@@ -2,27 +2,17 @@ import Particles from "./Custom/ReactBits/particles";
 import GradientText from "./Custom/ReactBits/gradientext";
 import ScrollReveal from "./Custom/ReactBits/scrollreveal";
 import AnimatedContent from './Custom/ReactBits/animatedcontent'
+import FallingText from "./Custom/ReactBits/fallingtext";
 const experience = () => {
     return (
-        <section className="bg-gradient-to-t from-black to-[#9a74cf50] bg-gradient-to-b from-black to-[#9a74cf50] mb-40">
+        <section className="bg-gradient-to-t from-black mb-40">
 
 
             {/*particles backgorund*/}
-            <div id="experience" style={{ width: '100%', height: '100%', position: 'absolute', zIndex: -1 }}>
-                <Particles
-                    particleColors={['#e58383ff', '#e58383ff']}
-                    particleCount={200}
-                    particleSpread={10}
-                    speed={0.1}
-                    particleBaseSize={100}
-                    moveParticlesOnHover={true}
-                    alphaParticles={false}
-                    disableRotation={false}
-                />
-            </div>
 
+        
 
-            <div className="z-999">
+            <div className="z-999" id="experience">
                 <AnimatedContent
 
                     distance={300}
@@ -88,9 +78,12 @@ const experience = () => {
                         </div>
                     </div>
                 </AnimatedContent>
+                
             </div>
 
+            
 
+           
 
         </section>
     )

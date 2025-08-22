@@ -3,44 +3,68 @@ import ChromaGrid from './Custom/ReactBits/chromagrid'
 
 const items = [
   {
-    image: "https://i.pravatar.cc/300?img=1",
-    title: "Sarah Johnson",
-    subtitle: "Frontend Developer",
-    handle: "@sarahjohnson",
+    image: "/src/assets/projects/amazon.PNG",
+    title: "amazon clone",
+    subtitle: "made with bootstrap",
+    handle: "@shihab",
     borderColor: "#3B82F6",
     gradient: "linear-gradient(145deg, #3B82F6, #000)",
-    url: "https://github.com/sarahjohnson"
+    url: "D:/web-dev/bootstrap/amazon.html"
   },
   {
-    image: "https://i.pravatar.cc/300?img=2",
-    title: "Mike Chen",
-    subtitle: "Backend Engineer",
-    handle: "@mikechen",
-    borderColor: "#10B981",
-    gradient: "linear-gradient(180deg, #10B981, #000)",
-    url: "https://linkedin.com/in/mikechen"
+    image: "/src/assets/projects/booking.png",
+    title: "booking clone",
+    subtitle: "made with bootstrap",
+    handle: "@",
+    borderColor: "#3B82F6",
+    gradient: "linear-gradient(180deg, #3B82F6, #000)",
+    url: ""
   },
   {
-    image: "/src/assets/projects/amazon.PNG",
-    title: "Mike Chen",
-    subtitle: "Backend Engineer",
-    handle: "@mikechen",
+    image: "/src/assets/projects/Capture.PNG",
+    title: "mortage calculator",
+    subtitle: "made with raw javascript with some validations, locating user and saving some cookies",
+    handle: "@",
+    borderColor: "#eae713ff",
+    gradient: "linear-gradient(180deg, #eae713ff, #000)",
+    url: ""
+  },
+  {
+    image: "/src/assets/projects/netflix.png",
+    title: "netflix clone",
+    subtitle: "made with bootstrap and some raw CSS",
+    handle: "@",
+    borderColor: "#fd0606ff",
+    gradient: "linear-gradient(180deg, #fd0606ff, #000)",
+    url: ""
+  },
+  {
+    image: "/src/assets/projects/whatsapp_login.png",
+    title: "whatsappp log-in clone",
+    subtitle: "made with bootstrap and some raw CSS",
+    handle: "@",
     borderColor: "#10B981",
     gradient: "linear-gradient(180deg, #10B981, #000)",
-    url: "https://linkedin.com/in/mikechen"
+    url: ""
+  },
+  {
+    image: "/src/assets/projects/whatsapphomepage.png",
+    title: "whatsappp homepage clone",
+    subtitle: "made with bootstrap and some raw CSS",
+    handle: "@",
+    borderColor: "#10B981",
+    gradient: "linear-gradient(180deg, #10B981, #000)",
+    url: ""
   }
 ];
 
 const project = () => {
   return (
-    <div className='mb-40'>
-      <div style={{ height: '600px', position: 'relative' }}>
-        <div id='projects'></div>
-        <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} scrollEase={0.02} />
-      </div>
+    
 
       <div className='mb-40'>
-        <div style={{ height: '600px', position: 'relative' }}>
+      
+        <div id='projects' style={{ height: '100%', position: 'relative' }}>
           <ChromaGrid 
             items={items}
             radius={300}
@@ -48,9 +72,10 @@ const project = () => {
             fadeOut={0.6}
             ease="power3.out"
           />
+          
         </div>
       </div>
-    </div>
+    
   )
 }
 

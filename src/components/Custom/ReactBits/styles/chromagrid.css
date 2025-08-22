@@ -11,6 +11,7 @@
   margin: 0 auto;
   padding: 1rem;
   box-sizing: border-box;
+  cursor: none;
 
   --x: 50%;
   --y: 50%;
@@ -22,6 +23,7 @@
     grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
     gap: 0.5rem;
     padding: 0.5rem;
+    cursor: none;
   }
 }
 
@@ -52,6 +54,7 @@
 
 .chroma-card:hover {
   border-color: var(--card-border);
+  cursor: none;
 }
 
 .chroma-card::before {
@@ -65,10 +68,12 @@
   opacity: 0;
   transition: opacity 0.5s ease;
   z-index: 2;
+  cursor: none;
 }
 
 .chroma-card:hover::before {
   opacity: 1;
+  cursor: none;
 }
 
 .chroma-img-wrapper {
@@ -79,14 +84,16 @@
   box-sizing: border-box;
   background: transparent;
   transition: background 0.3s ease;
+  cursor: none;
 }
 
 .chroma-img-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   border-radius: 10px;
   display: block;
+  cursor: none;
 }
 
 .chroma-info {
@@ -99,11 +106,13 @@
   grid-template-columns: 1fr auto;
   row-gap: 0.25rem;
   column-gap: 0.75rem;
+  cursor: none;
 }
 
 .chroma-info .role,
 .chroma-info .handle {
   color: #aaa;
+  cursor: none;
 }
 
 .chroma-overlay {
@@ -114,6 +123,7 @@
   backdrop-filter: grayscale(1) brightness(0.78);
   -webkit-backdrop-filter: grayscale(1) brightness(0.78);
   background: rgba(0, 0, 0, 0.001);
+  cursor: none;
 
   mask-image: radial-gradient(circle var(--r) at var(--x) var(--y),
       transparent 0%,
@@ -143,6 +153,7 @@
   backdrop-filter: grayscale(1) brightness(0.78);
   -webkit-backdrop-filter: grayscale(1) brightness(0.78);
   background: rgba(0, 0, 0, 0.001);
+  cursor: none;
 
   mask-image: radial-gradient(circle var(--r) at var(--x) var(--y),
       white 0%,

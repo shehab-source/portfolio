@@ -4,7 +4,7 @@ import React from 'react'
 
 const contactform = () => {
 
-    
+
 
     const [result, setResult] = React.useState("Send Message")
     const onSubmit = async (event) => {
@@ -30,38 +30,40 @@ const contactform = () => {
         }
     };
     return (
-        <section className="bg-gradient-to-b from-black to-[#9a74cf50] mt-50">
-            <AnimatedContent
+        <section className="bg-gradient-to-b from-black mt-50">
 
-                distance={200}
+            <div className='flex items-center justify-center h-screen mt-10' >
+                <div id="contact" className="w-1/2 backdrop-blur-md rounded-2xl shadow-lg">
+                    <AnimatedContent
 
-                direction="vertical"
+                        distance={200}
 
-                reverse={true}
+                        direction="vertical"
 
-                duration={2}
+                        reverse={false}
 
-                ease="power3.out"
+                        duration={2}
 
-                initialOpacity={0.2}
+                        ease="power3.out"
 
-                animateOpacity
+                        initialOpacity={0}
 
-                scale={1.1}
+                        animateOpacity
 
-                threshold={0.2}
+                        scale={1.1}
 
-                delay={0.5}
+                        threshold={0.2}
 
-            >
-                <div className='flex items-center justify-center h-screen mt-10' >
-                    <div className="w-1/2 backdrop-blur-md rounded-2xl shadow-lg">
-                        <h2 className=" felx justify-center itmes-centertext-3xl font-bold text-white mb-6">leave a message</h2>
+                        delay={0.5}
+                        
+
+                    >
+                        <h2  className=" felx justify-center itmes-centertext-3xl font-bold text-white mb-6">leave a message</h2>
 
                         <form className="space-y-4" onSubmit={onSubmit}>
                             <div>
                                 <label className="block text-sm text-gray-200 mb-1">Name</label>
-                                <input 
+                                <input
                                     name='name'
                                     type="text"
                                     placeholder="Your name"
@@ -70,7 +72,7 @@ const contactform = () => {
                                 />
                             </div>
 
-                            <div id="contact" >
+                            <div >
                                 <label className="block text-sm text-gray-200 mb-1">Email</label>
                                 <input
                                     name='email'
@@ -96,15 +98,15 @@ const contactform = () => {
                                 type="submit"
                                 className="w-full bg-violet-600 hover:bg-violet-700 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-300 shadow-md hover:shadow-violet-500/40"
                             >
-                             <span>{result}</span>
+                                <span>{result}</span>
                             </button>
-                        
-                        </form>
 
-                    </div>
+                        </form>
+                    </AnimatedContent>
                 </div>
-            </AnimatedContent>
-        </section>
+            </div>
+        
+        </section >
     )
 }
 

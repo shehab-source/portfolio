@@ -116,8 +116,8 @@ function Header() {
           </div>
 
           {/* Mobile Menu */}
-          <div className="lg:hidden flex bg-white dark:bg-gray-900  w-full">
-            <nav className={`flex flex-col space-y-4 ${isOpen ? "block" : "hidden"} py-4`}>
+          <div className="lg:hidden flex bg-white dark:bg-gray-900  w-full ml-auto mt-50">
+            <nav className={`flex flex-col mt-20 space-y-4 ${isOpen ? "block" : "hidden"} py-4`}>
               {["Home", "About", "Experience", "Projects", "Contact"].map((item) => (
                 <a
                   className="text-gray-700 dark:text-gray-300 font-medium hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors"

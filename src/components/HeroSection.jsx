@@ -6,16 +6,9 @@ import Lanyard from "./Custom/ReactBits/lanyard";
 
 const HeroSection = () => {
   return (
-    <section id="home" className=" bg-gradient-to-t from-black to-[#9a74cf50] h-screen bg-gradient-to-b from-violet-900 to-black flex xl:flex-row flex-col-reverse items-center justify-between lg:px-24 px-10 relative">
+    <section id="home" className=" bg-gradient-to-t from-black h-screen bg-gradient from-black flex xl:flex-row flex-col-reverse items-center justify-between lg:px-24 px-10 relative">
       {/* left section */}
-      <div className="top-0 left-0 z-0" style={{ width: '100%', height: '100%', position: 'absolute' }}>
-        <LiquidChrome
-          baseColor={[0.1, 0, 0.1]}
-          speed={0.6}
-          amplitude={0.22}
-          interactive={false}
-        />
-      </div>
+      
       <div>
         <motion.h1
           initial={{ opacity: 0, y: 88 }}
