@@ -6,7 +6,7 @@ import Lanyard from "./Custom/ReactBits/lanyard";
 
 const HeroSection = () => {
   return (
-    <section id="home" className=" bg-gradient-to-t from-black h-screen bg-gradient from-black flex xl:flex-row flex-col-reverse items-center justify-between lg:px-24 px-10 relative">
+    <section id="home" className=" bg-gradient-to-b from-black h-screen bg-gradient from-black flex xl:flex-row flex-col-reverse items-center justify-between lg:px-24 px-10 relative">
       {/* left section */}
       
       <div>

@@ -58,7 +58,7 @@ const contactform = () => {
                         
 
                     >
-                        <h2  className=" felx justify-center itmes-centertext-3xl font-bold text-white mb-6">leave a message</h2>
+                        <h2  className=" felx justify-center itmes-center text-3xl font-bold bg-gradient-to-r from-purple-400 to-purple-200 bg-clip-text text-transparent mb-6">leave a message</h2>
 
                         <form className="space-y-4" onSubmit={onSubmit}>
                             <div>

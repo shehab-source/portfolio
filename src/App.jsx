@@ -10,6 +10,7 @@ import Contactform from "./components/contactform";
 import Experience from "./components/experience";
 import Projects from "./components/projects";
 import Particles from "./components/Custom/ReactBits/particles";
+import Ribbons from "./components/Custom/ReactBits/ribbon"
 export default function App() {
   return (
     <div className="font-cairo">
@@ -18,15 +19,19 @@ export default function App() {
       <div style={{ width: '100%', height: '100%', position: 'fixed' }}>
         <Particles
           particleColors={['#ffffff', '#ffffff']}
-          particleCount={400}
-          particleSpread={10}
-          speed={0.1}
+          particleCount={450}
+          particleSpread={5}
+          speed={0.2}
           particleBaseSize={100}
-          moveParticlesOnHover={true}
+          moveParticlesOnHover={false}
           alphaParticles={false}
           disableRotation={false}
         />
       </div>
+
+      
+
+     
 
       <Header />
       <HeroSection />
@@ -37,6 +42,7 @@ export default function App() {
       <Scroller />
       <Contactform />
       <Footer />
+       
       <Progressbar />
 
 
